@@ -85,7 +85,7 @@ em{font-style:normal;color:var(--red)}
 @keyframes rise{from{transform:translateY(38%) skewY(4deg)}}
 @keyframes up{from{transform:translateY(105%)}}
 .side p{margin-top:22px;color:#cfcfcf;font-size:clamp(16px,1.1vw,21px);line-height:1.35}
-.side p,.side .cta{animation:fin 1s cubic-bezier(.16,1,.3,1) 1.45s forwards}
+.side p,.side .cta{animation:fin .9s cubic-bezier(.16,1,.3,1) .75s backwards}
 @keyframes fin{from{opacity:0;transform:translateY(16px)}}
 .cta{display:inline-flex;align-items:center;gap:12px;margin-top:28px;padding:18px 28px;border-radius:900px;font:600 16px/1 Archivo,sans-serif;color:#fff;background:linear-gradient(180deg,#ff2124,#c80003);box-shadow:0 0 0 1px rgba(255,255,255,.16) inset,0 12px 40px rgba(255,0,4,.45);position:relative;overflow:hidden;isolation:isolate;transition:transform .3s}
 .cta::before{content:"";position:absolute;inset:-1px;z-index:-1;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.45) 50%,transparent 70%);background-size:250% 100%;animation:sweep 3.2s linear infinite}
@@ -194,9 +194,9 @@ em{font-style:normal;color:var(--red)}
 @media(max-width:900px){.orb{top:590px}}
 .giant{position:relative;white-space:nowrap;font-size:clamp(120px,19vw,380px);line-height:.8;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.14);margin:0 -5vw;display:flex;gap:.3em;animation:rail 40s linear infinite;width:max-content}
 
-.intro{position:fixed;inset:0;z-index:300;background:#c80003;display:grid;place-items:center;clip-path:inset(0 0 0 0);animation:iout .95s cubic-bezier(.77,0,.18,1) .8s forwards}
+.intro{position:fixed;inset:0;z-index:300;background:#c80003;display:grid;place-items:center;clip-path:inset(0 0 0 0);animation:iout .85s cubic-bezier(.77,0,.18,1) .45s forwards}
 @keyframes iout{to{clip-path:inset(0 0 100% 0);visibility:hidden}}
-.intro img{width:clamp(150px,13vw,240px);height:auto;filter:brightness(0) invert(1);animation:ipulse .8s cubic-bezier(.16,1,.3,1) both}
+.intro img{width:clamp(150px,13vw,240px);height:auto;filter:brightness(0) invert(1);animation:ipulse .5s cubic-bezier(.16,1,.3,1) both}
 .intro span{position:absolute;bottom:28px;left:0;right:0;text-align:center;font:700 13px/1 Inter,sans-serif;letter-spacing:.08em;color:#fff;text-transform:uppercase}
 @keyframes ipulse{from{opacity:0;transform:scale(.86)}to{opacity:1;transform:none}}
 html.lock,html.lock body{overflow:hidden}
@@ -409,7 +409,7 @@ if(gl&&!soft){
 }
 
 /* entrada dos títulos */
-setTimeout(()=>{document.body.classList.add('ready');window.startDemo&&window.startDemo();$('#intro')&&$('#intro').remove()},Math.max(0,1750-performance.now()));
+setTimeout(()=>{document.body.classList.add('ready');window.startDemo&&window.startDemo();$('#intro')&&$('#intro').remove()},Math.max(0,1350-performance.now()));
 $$('.big').forEach(h=>h.querySelectorAll('.w>span').forEach((s,i)=>s.style.animationDelay=(.85+i*.08)+'s'));
 
 /* reveal */
