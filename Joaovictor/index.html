@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Comunidade JV</title>
-<script>document.documentElement.classList.add("fw");const fwo=()=>requestAnimationFrame(()=>requestAnimationFrame(()=>document.documentElement.classList.remove("fw")));document.fonts?document.fonts.load('800 40px Archivo').then(fwo,fwo):fwo();setTimeout(()=>document.documentElement.classList.remove("fw"),1500)</script>
 <style>
 @font-face{font-family:Archivo;src:url(/Joaovictor/fonts/archivo-sub.woff2) format("woff2");font-weight:400 800;font-stretch:62% 100%;font-display:swap}
 @font-face{font-family:Inter;src:url(/Joaovictor/fonts/inter-latin-wght-normal.woff2) format("woff2");font-weight:400 500;font-display:swap}
@@ -73,18 +72,17 @@ em{font-style:normal;color:var(--red)}
 .side{position:absolute;z-index:3;top:50%;width:min(34vw,680px)}
 .side.l{left:max(5vw,16px);transform:translateY(-48%)}
 .side.r{right:max(5vw,16px);text-align:right;transform:translateY(-22%)}
-.fw .side{visibility:hidden}
 .side::before{content:"";position:absolute;inset:-30% -35%;z-index:-1;background:radial-gradient(closest-side,rgba(0,0,0,.6),rgba(0,0,0,.25) 60%,transparent);pointer-events:none}
 .side .tag{font:500 clamp(12px,.85vw,15px)/1.3 Inter,sans-serif;color:rgba(255,255,255,.7);margin-bottom:18px;display:flex;align-items:center;gap:10px}
 .side.r .tag{justify-content:flex-end}
 .side .tag i{width:28px;height:1px;background:var(--red)}
-.big{font-size:clamp(60px,6.5vw,132px);line-height:.86}
+.big{font-size:clamp(60px,6.5vw,132px);line-height:.86;white-space:nowrap;height:1.72em}
 .big .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.04em}
 .big .w>span{display:inline-block}
 .big .w>span{}
 @keyframes rise{from{transform:translateY(38%) skewY(4deg)}}
 @keyframes up{from{transform:translateY(105%)}}
-.side p{margin-top:22px;color:#cfcfcf;font-size:clamp(16px,1.1vw,21px);line-height:1.35}
+.side p{margin-top:22px;color:#cfcfcf;font-size:clamp(16px,1.1vw,21px);line-height:1.35;white-space:nowrap;height:2.7em}
 .side p,.side .cta{animation:fin .9s cubic-bezier(.16,1,.3,1) .75s backwards}
 @keyframes fin{from{opacity:0;transform:translateY(16px)}}
 .cta{display:inline-flex;align-items:center;gap:12px;margin-top:28px;padding:18px 28px;border-radius:900px;font:600 16px/1 Archivo,sans-serif;color:#fff;background:linear-gradient(180deg,#ff2124,#c80003);box-shadow:0 0 0 1px rgba(255,255,255,.16) inset,0 12px 40px rgba(255,0,4,.45);position:relative;overflow:hidden;isolation:isolate;transition:transform .3s}
@@ -234,12 +232,12 @@ html.lock,html.lock body{overflow:hidden}
 
   <div class="side l">
     <div class="tag"><i></i>Comunidade JV</div>
-    <h1 class="big cond"><span class="w"><span>Flyers</span></span> <span class="w"><span>que</span></span><br><span class="w"><span><em>vendem.</em></span></span></h1>
+    <h1 class="big cond"><span class="w"><span>Flyers&nbsp;que</span></span><br><span class="w"><span><em>vendem.</em></span></span></h1>
   </div>
   <div class="side r">
     <div class="tag">Curso de flyers &amp; thumbnails<i></i></div>
-    <h2 class="big cond"><span class="w"><span>Thumbs</span></span> <span class="w"><span>que</span></span><br><span class="w"><span><em>viralizam.</em></span></span></h2>
-    <p>Aprenda o método por trás das artes que geram&nbsp;resultado.</p>
+    <h2 class="big cond"><span class="w"><span>Thumbs&nbsp;que</span></span><br><span class="w"><span><em>viralizam.</em></span></span></h2>
+    <p>Aprenda o método por trás das artes<br>que geram resultado.</p>
     <a class="cta mag" href="#cta">Quero entrar <span class="ar"><svg width="10" height="10" viewBox="0 0 10 10"><path d="M1 9 9 1M3 1h6v6" stroke="#d90004" stroke-width="1.6" fill="none"/></svg></span></a>
   </div>
   <div class="hint"><b></b><span class="t">Passe o mouse no João · role para descobrir</span></div>
